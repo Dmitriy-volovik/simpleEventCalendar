@@ -1,0 +1,17 @@
+.div-time-part > span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    text-align: right;
+    float: right;
+    padding-right: 10%;
+    color: rgb(44, 44, 44);
+
+}
+.div-time-part:nth-child(even) > span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    /* background-color: brown; */
+    
+}

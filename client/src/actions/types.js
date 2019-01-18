@@ -1,0 +1,9 @@
+export const ADD_USER = 'add_user';
+export const LOGGED_IN_USER = 'logged_in_user';
+export const LOG_OUT = 'log_out';
+export const EVENT_FETCH_DATA_SUCCESS = 'event_fetch_data_success';
+export const CREATE_EVENT_DATA = 'create_event_data';
+export const FIND_ALL_USER_EVENTS = 'find_all_user_events';
+export const EDIT_EVENT = 'edit_event';
+export const DELETE_EVENT = 'delete_event';
+export const MODIFIED_EVENT = 'modified_event';

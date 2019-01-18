@@ -1,0 +1,17 @@
+.user-avatar{
+ float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(0, 42, 78);
+
+ /* margin: auto;
+ position: relative ; */
+}
+.user-avatar > p, h3{
+    margin: 0;
+}
+.user-avatar > p:hover, h3:hover{
+    cursor: pointer;
+    border-bottom: 3px solid rgb(0, 0, 0);
+}

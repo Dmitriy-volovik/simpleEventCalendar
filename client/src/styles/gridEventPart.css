@@ -1,0 +1,8 @@
+.main-div-events{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #e2ecf5;
+    border-left: 2px solid #6e9ecf;
+    white-space: nowrap;
+    /* box-sizing: border-box; */
+}

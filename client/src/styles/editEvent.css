@@ -1,0 +1,24 @@
+.main-edit-div{
+    /* background-color: blueviolet; */
+    /* overflow: hidden;
+    text-overflow: ellipsis!important; */
+    white-space: nowrap;
+
+    height: 100%;
+    width: 100%;
+}
+
+.main-edit-div > p{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.main-edit-div > p > span{
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}

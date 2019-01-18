@@ -1,0 +1,57 @@
+ .main-block{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    min-width: 357px;
+    width: 30%;
+    height: 65%;
+    margin-Right: -50%;
+    transform: translate(-50%, -50%);
+    /* background-image: linear-gradient(to right, #29323c , #485563); */
+    /* background-color: blueviolet; */
+background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898; 
+ background-blend-mode: multiply,multiply;
+    }
+
+.main-button-div{
+  display: inline-block;
+  height: 100%;
+  /* margin-left: 50%; */
+}
+
+.main-button-div > p {
+  /* display: inline-block; */
+  height: 100%;
+}
+
+.knopka{
+  margin-left: 10%;
+  margin-top: 40px;
+}
+.close-button{
+  float: right;
+}
+
+.add-event > input{
+  margin: 0px 10% 30px;
+  width: 80%;
+  border: none;
+  border-bottom: 2px solid white;
+  box-sizing: border-box;
+  /* outline: none; */
+}
+.add-event > input:hover{
+  border-bottom: 2px solid black;
+}
+
+.add-event > label{
+  color: #FFFFFF;
+  margin-left: 10%;
+}
+.h2-style{
+  margin-bottom: 30px;
+  text-align: center;
+  color: #FFFFFF;
+}
