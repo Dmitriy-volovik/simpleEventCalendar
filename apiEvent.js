@@ -7,11 +7,9 @@ routerEvent.get('/1', async(req, res) => {
         .then(event => {
             res.send(event);
         })
-    // res.send("ny dopystim tu sdelal na4alo, i 4e?")
 });
 
 routerEvent.post('/all', async(req,res) =>{
-    // console.log(req.body);
     const events = await Events.find({ _user: req.body.userId });
     console.log(events);
     res.send(events);
@@ -43,16 +41,5 @@ routerEvent.delete('/delete', async(req, res) => {
             res.send(events);
         })
 });
-// routerEvent.post('/users/login', (req, res) => {
-//     User.findOne({ email: req.body.email, password: req.body.password }
-//     )
-//         .then(user => {
-//             res.send(user);
-//         })
-// });
-
-
-
-
 
 module.exports = routerEvent;
