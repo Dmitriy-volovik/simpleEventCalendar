@@ -13,7 +13,6 @@ class GridTimePartOne extends React.PureComponent {
         isDraggable: false,
         isResizable: false,
         onLayoutChange: function () { },
-        // This turns off compaction so you can place items wherever.
         verticalCompact: false,
         columnWidth: 1,
         margin: [0, 0],

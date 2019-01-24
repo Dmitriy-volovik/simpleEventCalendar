@@ -7,17 +7,13 @@ import EditEvent from "../modalEditEvent"
 class GridEventPartOne extends React.PureComponent {
     static defaultProps = {
         className: "layout",
-        // items: 9,
-        // cols: 4,
         rowHeight: 2,
         isDraggable: false,
         isResizable: false,
         onLayoutChange: function () { },
-        // This turns off compaction so you can place items wherever.
         verticalCompact: false,
         columnWidth: 1,
         margin: [0, 0],
-        //useCSSTransforms: false,
         containerPadding: [0, 0],
     };
 
@@ -32,9 +28,6 @@ class GridEventPartOne extends React.PureComponent {
     }
 
     componentWillReceiveProps() {
-
-        // console.log(`will recieveProp props,  ${this.props.elements.length}`);
-        // console.log(` will  recieveProp cols,  ${GridEventPartOne.defaultProps.cols}`);
         setTimeout(() => {
             var layout = this.generateLayout(this.props.elements.length);
             this.setState({ layout });
@@ -45,7 +38,6 @@ class GridEventPartOne extends React.PureComponent {
             return (
                 <div key={i} className="main-div-events">
                     <EditEvent event={element} />
-                    {/* <span className="text" >{element.title}</span> */}
                 </div>
             );
         });
@@ -73,9 +65,7 @@ class GridEventPartOne extends React.PureComponent {
     }
 
     render() {
-        // let arrlength = this.props.elements.length;
-        // console.log(`dlina mas v render, ${arrlength}`);
-        
+
         const ReactGridLayout = WidthProvider(RGL, this.props.columnsCount, 200);
 
         return (

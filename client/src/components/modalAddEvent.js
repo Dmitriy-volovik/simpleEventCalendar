@@ -52,19 +52,16 @@ class CreateEvent extends React.Component {
     }
 
     render() {
-        // this.props.modifiedEvents(placeEventsInTwoColumns(this.props.events))
         return (
             <div className="main-button-div">
                 <button className="btn btn-primary" style={{marginLeft: "400px"}} onClick={this.openModal}>Add Event</button>
-                {/* <a href="#" onClick={this.openModal}>add album</a>  */}
+                
                 <Modal
                     isOpen={this.state.modalIsOpen}
                     onAfterOpen={this.afterOpenModal}
                     onRequestClose={this.closeModal}
                     shouldCloseOnOverlayClick={false}
                     className="main-block"
-                    // className="Modal"
-                    // overlayClassName="Overlay"
                     contentLabel="Example Modal"
                 >
                     <button className="close-button btn btn-danger btn-sm" onClick={this.closeModal}>close</button>
@@ -90,13 +87,11 @@ class CreateEvent extends React.Component {
 const mapStateToProps = state => {
     return {
         user: state.LoggedInUser.user,
-        // events: state.showAllEvent,
     };
 }
 const mapDispatchToProps = dispatch =>  {
     return {
         eventCreateData: (url, data) => dispatch(createEventData(url, data)),
-        // modifiedEvents: (data) => dispatch(saveModifiedEvents(data))
     };
 }
 

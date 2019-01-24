@@ -4,7 +4,6 @@ import "../styles/editEvent.css";
 import Modal from 'react-modal';
 import { connect } from "react-redux";
 import {
-    createEventData,
     updateEventData,
     deleteEventData
 } from "../actions/eventAction";
@@ -47,7 +46,6 @@ class EditEvent extends React.Component {
             fromTime: this.fromTime.value,
             tillTime: this.tillTime.value
         });
-        // console.log(this.title.value);
             this.props.eventUpdateData('/ape/event/update', {
             title: this.title.value,
             fromTime: this.fromTime.value,
@@ -72,7 +70,6 @@ class EditEvent extends React.Component {
 
     render() {
         const singleEvent1 = this.props.event;
-        // console.log(singleEvent1);
         return (
             <div className="main-edit-div" > 
                 <p onClick={this.openModal}> 

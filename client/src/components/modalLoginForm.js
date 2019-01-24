@@ -11,7 +11,6 @@ class ModalLoginForm extends React.Component {
 
         this.state = {
             showModal: false,
-            // loggedIn: null,
             loading: false,
             error: null,
             initialTab: null,
@@ -72,7 +71,6 @@ class ModalLoginForm extends React.Component {
 
         this.closeModal();
         this.setState({
-            // loggedIn: method,
             loading: false
         })
     }

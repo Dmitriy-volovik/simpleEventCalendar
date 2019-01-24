@@ -6,13 +6,6 @@ import {
     MODIFIED_EVENT
 } from './types'
 
-// export function eventsFetchDataSuccess(events) {
-//     return {
-//         type: EVENT_FETCH_DATA_SUCCESS,
-//         payload: { events }
-//     }
-// }
-
 export function createEventDataSuccess(event) {
     return {
         type: CREATE_EVENT_DATA,
@@ -107,7 +100,6 @@ export function deleteEventData(url, id) {
 
 export function findAllUserEvents(url, data) {
     return async (dispatch) => {
-        // debugger;
         let reqBody = {
             method: "post",
             headers: {

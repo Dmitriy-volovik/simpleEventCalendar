@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { userStore } from "./userState";
 import { connect } from 'react-redux';
 import "../styles/UserNickName.css";
 

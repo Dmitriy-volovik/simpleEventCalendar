@@ -1,7 +1,6 @@
 import React, { Component } from "react"
 import { connect } from "react-redux";
 import "../../styles/eventPartCalendar.css"
-// import GridEventPartTwo from "./gridEventPart2";
 import GridEventPartOne from "./gridEventPart1";
 
 class EventPartTwo extends Component {
