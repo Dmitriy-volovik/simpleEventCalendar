@@ -81,6 +81,8 @@ export function checkUserData(url, data) {
         }
         await fetch(url, reqBody)
             .then(response => {
+                // console.log(`eto user,  ${response}`);
+                console.log(response);
                 return response.json();
             })
             .then(user => dispatch(checkUserDataAction(user)))

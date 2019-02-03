@@ -88,8 +88,8 @@ class EditEvent extends React.Component {
                     <h2 className="h2-style" >Enter data to edit an event</h2>
                     <div></div>
                     <form className="add-event" >
-                        <input placeholder="title" type="text"
-                            ref={title => this.title = title} required/><br />
+                        <input type="text" placeholder="title" required minlength="2" maxlength="10"
+                            ref={title => this.title = title} /><br />
                         <label for="from">From </label>
                         <input type="time" id="from" min="08:00" max="17:00" required
                             ref={ft => this.fromTime = ft} name="from" step="300" /><br />

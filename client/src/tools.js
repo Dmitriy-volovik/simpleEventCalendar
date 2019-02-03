@@ -33,14 +33,12 @@ export const editEventForDownLoad = events =>{
 }
 
 export const placeEventsInTwoColumns = events => {
-    debugger;
 
     if (events.length > 0){
         let leftColumn = [];
         let rightColumn = [];
         events.forEach(event => {
             let parsAgain = getStartAndDuration(event);
-            console.log(parsAgain);
 
             if (parsAgain.start <= 270 && parsAgain.start + parsAgain.duration < 270) {
                 event.start = parsAgain.start;

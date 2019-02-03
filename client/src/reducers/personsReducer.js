@@ -6,8 +6,8 @@ import {
 
 export function personsReducer(state = [], action) {
     switch (action.type) {
-        case "PERSONS_FETCH_DATA_SUCCESS":
-            return action.payload.persons;
+        // case "PERSONS_FETCH_DATA_SUCCESS":
+        //     return action.payload.persons;
         case ADD_USER:
             return [...state, action.payload.user];
         default:

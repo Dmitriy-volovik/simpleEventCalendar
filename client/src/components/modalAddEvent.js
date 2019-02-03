@@ -68,7 +68,7 @@ class CreateEvent extends React.Component {
                     <h2 className="h2-style" >Enter data to create an event</h2>
                     <div></div>
                     <form className="add-event" onSubmit={this.submitHandler} >
-                        <input placeholder='title'
+                        <input type="text" placeholder='title' required minlength="1" maxlength="100" 
                             ref={title => this.title = title} /><br />
                         <label for="from">From </label>
                         <input type="time" placeholder='fromTime' min="08:00" max="17:00" required
