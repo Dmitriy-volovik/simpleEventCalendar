@@ -31,9 +31,9 @@ class Header extends Component {
                 {this.props.auth !== "Anonym" ? <CreateEvent /> : "" }
                 <UserNickName />
                 {this.props.auth !== "Anonym" ?
-                    <button className="btn btn-primary" style={{ float: "right", marginRight: "7%"}}
+                    <button className="btn btn-primary export-button" style={{ float: "right", marginRight: "7%"}}
                      onClick={this.makeFile}>
-                        Export Your events
+                        Export events
                     </button> : ""}
             </div>
         )
