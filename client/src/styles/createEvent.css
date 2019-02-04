@@ -50,3 +50,19 @@ background: linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.1
   text-align: center;
   color: #FFFFFF;
 }
+
+.add-ev-button{
+  margin-left: 400px;
+}
+
+@media only screen and (max-width: 930px) {
+  .add-ev-button{
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 601px) {
+  .add-ev-button{
+    margin-left: 10px;
+  }
+}

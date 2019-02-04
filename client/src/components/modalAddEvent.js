@@ -54,7 +54,7 @@ class CreateEvent extends React.Component {
     render() {
         return (
             <div className="main-button-div">
-                <button className="btn btn-primary" style={{marginLeft: "400px"}} onClick={this.openModal}>Add Event</button>
+                <button className="btn btn-primary add-ev-button" onClick={this.openModal}>Add Event</button>
                 
                 <Modal
                     isOpen={this.state.modalIsOpen}
